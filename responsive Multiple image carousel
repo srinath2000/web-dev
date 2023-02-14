@@ -1,0 +1,89 @@
+<!-- Responsive multiple image slider using slick carousel-->
+ <!-- html code-->
+    <div class="slider-body">
+      <div class="wrapper">
+
+        <div class="carousel slider">
+          <div class="carousel-img">
+            <img class="slider-img" src="pictures/Property 1=Frame 422.png">
+            
+          </div>
+          
+          <div class="carousel-img">
+            <img class="slider-img" src="pictures/Property 1=Component 16.png">
+            
+          </div>
+          
+          <div class="carousel-img" class="carousel2-img">
+            <img class="slider-img" src="pictures/Property 1=Component 17.png">
+            
+          </div>
+          
+          <div class="carousel-img">
+            <img class="slider-img" src="pictures/Property 1=Component 18.png">
+            
+          </div>
+          
+          <div class="carousel-img">
+            <img class="slider-img" src="pictures/qaz (3).png">
+            
+          </div>
+          
+          <div class="carousel-img">
+            <img class="slider-img" src="pictures/wsx.png">
+            
+          </div>
+          
+          <div class="carousel-img">
+            <img class="slider-img" src="pictures/qwe.png">
+            
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    '
+    
+    
+    
+    
+    
+ /*   jquery    */
+    
+$('.slider').slick({
+    arrows: true,
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 599,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots:false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+      
+    ]
+  });
+
